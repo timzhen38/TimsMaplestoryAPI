@@ -133,6 +133,7 @@ namespace TimsMaplestoryAPI.Controllers
             {
                 response.statusCode = 404;
                 response.statusDescription = "CLASS NOT FOUND";
+                return response;
             }
 
             _context.Classes.Remove(@class);

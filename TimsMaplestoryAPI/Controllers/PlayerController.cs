@@ -130,7 +130,8 @@ namespace TimsMaplestoryAPI.Controllers
             if (player == null)
             {
                 response.statusCode = 404;
-                response.statusDescription = "CLASS NOT FOUND";
+                response.statusDescription = "PLAYER NOT FOUND";
+                return response;
             }
 
             _context.Players.Remove(player);
